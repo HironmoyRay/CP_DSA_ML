@@ -1,8 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    1 - 5+1 = 6 -> 11
-    3 - 5+2 = 7 -> 13
-    5 - 5+3 = 8 -> 15
+    int n;
+    scanf("%d", &n);
+    for (int i = 1; i <= 10+n; i=i+2)
+    {
+       for (int j = 10+n; j >=1 ; j=j-2)
+       {
+            printf(" ");
+       }
+       for (int j = 1; j <=10+n ; j=j+2)
+       {
+            printf("*");
+       }
+       printf("\n");
+       
+    }
+    
     return 0;
 }
